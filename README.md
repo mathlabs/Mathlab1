@@ -1,10 +1,16 @@
 ## Mathlab
 
-You can use the [editor on GitHub](https://github.com/mathlabs/MathLab1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Using Mathlab in your project
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can use the [Mathlab Python Library from Repo](https://github.com/mathlabs/Mathlab1) and download it in .ZIP format to include it in your project manually.
 
-### Markdown
+Or you can install Git Bash if you're in Windows or skip it if you use Linux or Mac, go to your project folder through the terminal and type the following code:
+
+```markdown
+  git clone https://github.com/mathlabs/Mathlab1.git
+```
+
+### Prequisite Theories developed by Developer
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 

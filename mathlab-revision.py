@@ -9,25 +9,29 @@ def braccontroller(open, close):
 def divcontroller(divindex):
     for i in divindex:
         ans = int(chars[int(i) - 1]) / int(chars[int(1) + 1])
-        chars[int(i) - 1:int(i) + 1] = ans
+        del chars[int(i) - 1:int(i) + 1]
+        chars.insert(int(i) - 1, ans)
 
 
 def mulcontroller(mulindex):
     for i in mulindex:
         ans = int(chars[int(i) - 1]) * int(chars[int(1) + 1])
-        chars[int(i) - 1:int(i) + 1] = ans
+        del chars[int(i) - 1:int(i) + 1]
+        chars.insert(int(i) - 1, ans)
 
 
 def addcontroller(addindex):
     for i in addindex:
         ans = int(chars[int(i) - 1]) + int(chars[int(i) + 1])
-        chars[int(i) - 1:int(i) + 1] = ans
+        del chars[int(i) - 1:int(i) + 1]
+        chars.insert(int(i) - 1, ans)
 
 
 def subcontroller(subindex):
     for i in subindex:
         ans = int(chars[int(i) - 1]) - int(chars[int(1) + 1])
-        chars[int(i) - 1:int(i) + 1] = ans
+        del chars[int(i) - 1:int(i) + 1]
+        chars.insert(int(i) - 1, ans)
 
 
 print("Type your problem in this format :: 2+5-6+2")
@@ -61,7 +65,7 @@ def conclude(q):
     mulcontroller(mulopindex)
     addcontroller(addopindex)
     subcontroller(subopindex)
-    return ''.join(chars)
+    return chars
 
 
 print(conclude(query))

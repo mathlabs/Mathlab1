@@ -58,7 +58,7 @@ def Conclude(q):
 	bracOpenIndex = []
 	bracCloseIndex = []
 	for x in q:
-		chars.append(x)
+        chars.append(x)
 
     for i in chars:
 		addOpIndex = [i for i, x in enumerate(chars) if x == "+"]
@@ -69,10 +69,10 @@ def Conclude(q):
 		bracCloseIndex = [i for i, x in enumerate(chars) if x == ")"]
 
     bracController(bracOpenIndex, bracCloseIndex)
-	divController(divOpIndex)
-	mulController(mulOpIndex)
-	addController(addOpIndex)
-	subController(subOpIndex)
+    divController(divOpIndex)
+    mulController(mulOpIndex)
+    addController(addOpIndex)
+    subController(subOpIndex)
     return ''.join(chars)
 
 
